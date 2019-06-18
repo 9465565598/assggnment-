@@ -1,0 +1,69 @@
+L=[11, 13, 14, 12]
+
+
+
+
+#1.1 SORTING IN ACCENDING ORDER 
+L.sort()
+print ("After Sort (Asending) --> ", L)
+
+
+
+#1.2 SORTING IN DECENDING ORDER
+L.sort(reverse=True)
+print("after sorting (Decending) -->", L)
+
+#1.3 ADDING 50 AND 60 TO THE LIST 
+L.append("50")
+L.append("60")
+print("list after adding L=",L)
+#1.4 DELEATING 11 AND 13 FROM THE LIST
+del L[0]
+del L[2]
+print("after deleting L=",L)
+#1.5 SEARCHING FOR 13 IN THE LIST L
+for i in L:
+    if i == 13:
+        print("element found")
+        break
+#1.6 NUMBER OF ELEMENTS IN THE LIST L
+print("no. of elements in list L=",len(L))
+
+
+#1.7 PRINTING THE SUM OF THE ELEMENTS OF THE LIST
+I=0
+for i in L:
+    I=I+i
+print("sum of the elements of list L= ", I)
+
+#1.8 PRINTING THE SUM OF THE ODD NUMBERS IN LIST L
+s=0
+for i in L:
+    if (i % 2 != 0):
+        s=s+i
+print ("sum of all the odd numbers in the list L is=",s)
+
+
+#1.9  PRINTING THE SUM OF ALL THE ODD NUMBERS IN THE LIST L
+S=0
+for i in L:
+    if i%2==0:
+        S=S+i;
+print ("sum of all the even numbers present in the list L is =",S)
+
+
+#1.10  PRINTING THE SUM OF ALL THE PRIME NUMBERS IN THE LIST L
+x=0
+for i in L:
+    for a in range(2,i/2):
+        if i%a!=0:
+            x=x+i
+print ("Sum of the prime numbers in the list is=",x)
+
+#1.11  PROGRAM TO CLEAR ALL THE ELEMENTS IN THE LIST
+for i in range (1,len(L)):
+    del[i]
+print("after deleating all the elements from the list L",L)
+
+#1.12  DELEATING THE LIST l
+del L
